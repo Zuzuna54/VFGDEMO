@@ -175,7 +175,7 @@ input[class^="btn-"]:hover {
 
 body {
   font-family: "Dosis", sans-serif;
-  line-height: 1.6;
+  line-height: 1.1;
   background: #fff; }
 
 a {
@@ -247,21 +247,22 @@ img {
 .navbar.top {
   transition: 0.5s; }
 
-#header-home {
-  background: url("../img/volley.jpeg") no-repeat center right/cover;
-  height: 100vh;
-  color: #fff; }
-  #header-home .header-content {
-    text-align: center;
-    padding-top: 20%; }
-    #header-home .header-content h1 {
-      font-size: 4rem;
-      line-height: 1.2; }
-
-#header-inner {
-  background: url("../img/volley.jpeg") no-repeat 20% 30%/cover;
-  height: 5.5rem;
-  border-bottom: 3px solid #ec3238; }
+#header {
+  height: 25vh; }
+  #header-home {
+    background: url("../img/volley.jpeg") no-repeat center right/cover;
+    height: 100vh;
+    color: #fff; }
+    #header-home .header-content {
+      text-align: center;
+      padding-top: 20%; }
+      #header-home .header-content h1 {
+        font-size: 4rem;
+        line-height: 1.2; }
+  #header-inner {
+    background: url("../img/volley.jpeg") no-repeat 20% 30%/cover;
+    height: 5.5rem;
+    border-bottom: 3px solid #ec3238; }
 
 #home-a {
   max-height: 45vh; }
@@ -433,6 +434,21 @@ img {
 .dropdown {
   position: relative;
   display: inline-block; }
+  .dropdown .targ-a {
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    background-color: transparent;
+    transition: background-color 0.5s;
+    padding: 0.5rem;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%; }
+    .dropdown .targ-a:hover {
+      background-color: transparent; }
+    .dropdown .targ-a.current {
+      background-color: #b8b8b8; }
 
 .dropdown-content {
   display: none;
@@ -624,6 +640,9 @@ img {
     line-height: 1rem;
     height: 100%;
     width: 100%; }
+
+#main-footer {
+  padding-top: 5vh; }
 
 @media (max-width: 800px) {
   #header-home {
